@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="css/style.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Ubuntu:wght@300;400;500&display=swap" rel="stylesheet">
     <script src="js/jquery/jquery-3.4.1.min.js"></script>
-    <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script src="js/slick.min.js"></script>
     <link rel="shortcut icon" href="img/favicon.ico" type="image/png">
   </head>
@@ -19,66 +18,99 @@
         </path>
       </svg>
     </div>
-    <!--header-->
+   
+    <!--main-->
+    <section class="main">
+      <!--header-->
     <header class="header">
       <div class="header__wrapper">
-        <a href="/" class="logo">
+        <a href="/" class="logo  logo--header">
           <img src="img/logo.png" alt="">
         </a>
-        <div class="header__call">
-          <a href="tel:88002015543">8 (800) 201 55 43</a>
-          <button class="btn btn--call">
+        <div class="header__call  header__call--header">
+          <a href="tel:88002015543" class="header__phone">8 (800) 201 55 43</a>
+          <a href="#callback" class="header__call btn btn--call  popup-with-zoom-anim">
             Заказать звонок
-          </button>
+          </a>
         </div>
         <div class="logo__text">
           <span>Издательство и типография в Москве.</span>
           <span>Издаем, печатем и реализуем книги с 2000 г.</span>
         </div>
-        <div class="address">
+        <div class="address  address--header">
           <p class="address__time">Пн-Пт: 9:00 – 19:00</p>
           <p class="address__text">Москва, ул. Красноармейская, д. 2а</p>
         </div>
       </div>
     </header>
-    <!--main-->
-    <section class="main">
       <div  class="main__wrapper">
         <h1 class="main__title">Получите готовую книгу за 21 день</h1>
         <div class="main__gift">
           <p class="main__subtitle">Издательский пакет в подарок</p>
           <p class="main__price">3960&#8381;</p>
         </div>
-        <ul class="main__items">
-          <li class="main__item"><span>Разместим книгу</span> в 4 отечественных и 2 зарубежных интернет-магазинах</li>
-          <li class="main__item"><span>Изготовим 16 обязательных экземпляров</span> по себестоимости и отвезем их в книжную палату</li>
-          <li class="main__item"><span>Бесплатно доставим</span> отпечатанный тираж по Москве при заказе от 10 000₽</li>
-        </ul>
-        <button class="main__btn btn btn--popap">Получить расчет сейчас</button>
+        <div class="main__content">
+          <ul class="main__items">
+            <li class="main__item"><span>Разместим книгу</span> в 4 отечественных и 2 зарубежных интернет-магазинах</li>
+            <li class="main__item"><span>Изготовим 16 обязательных экземпляров</span> по себестоимости и отвезем их в книжную палату</li>
+            <li class="main__item"><span>Бесплатно доставим</span> отпечатанный тираж по Москве при заказе от 10 000₽</li>
+          </ul>
+          <div class="main__play">
+            <a href="#play" class="popup-with-zoom-anim"><img src="img/play.png" alt=""></a>
+            <span>Узнайте об издательстве за 30 секунд</span>
+          </div>
+        </div>
+        <form action="#" class="main__form" method="POST">
+            <div class="form__wrapper">
+              <p class="form-callback__title">Получите расчет издания книги в 3 ценовых вариантах и:</p>
+              <ul class="form-callback__items">
+                <li class="form-callback__item">Узнайте что входит в допечатную подготовку;</li>
+                <li class="form-callback__item">Зачем нужен издательский пакет;</li>
+                <li class="form-callback__item">Какие есть способы изготовления книги.</li>
+              </ul>
+              <div class="main__form--wrap">
+                <div class="form__input  form__input--name">
+                  <label for="name3"></label>
+                  <input type="text" name="name" id="name3" placeholder="Ваше имя">
+                </div>
+
+                <div class="form__input  form__input--tel">
+                  <label for="tel3"></label>
+                    <input type="tel" id="tel3" name="tel" placeholder="Ваш номер телефона">
+                </div>
+
+                </div>
+                <div class="form-callback__btn">
+                  <input type="submit" class="btn  btn--form" value="Получить расчет сейчас">
+                </div>
+                <p class="form__subtitle2">Нажимая на кнопку, Вы даете согласие на обработку персональных данных и соглашаетесь с политикой конфедициальности</p>
+            </div>
+          </form>
+        <a href="#calculation" class="main__btn btn btn--popap  popup-with-zoom-anim">Получить расчет сейчас</a>
       </div>
     </section>
 
     <!--advantage-->
     <section class="advantage">
       <div class="advantage__wrapper">
-        <h2 class="advantage__title">Ваша выгода</h2>
-        <ul class="advantage__items">
-          <li class="advantage__item">
+        <div class="advantage__items">
+          <h2 class="advantage__title">Ваша выгода</h2>
+          <div class="advantage__item">
             Издаваясь у нас вы экономите более <span>437 часов</span> драгоценного времени.
-          </li>
-          <li class="advantage__item">
+          </div>
+          <div class="advantage__item">
             Печатаем самыми маленькими тиражами от <span>1 экземпляра</span>.
-          </li>
-          <li class="advantage__item">
+          </div>
+          <div class="advantage__item">
             <span>100%</span> гарантия качества, перепечатаем брак за наш счет..
-          </li>
-          <li class="advantage__item">
+          </div>
+          <div class="advantage__item">
             Собственная типография в пешей доступности от <span>метро Петровский парк</span>.
-          </li>
-          <li class="advantage__item">
+          </div>
+          <div class="advantage__item">
             Понимаем наших авторов с полуслова, средний срок сотрудничества – <span>7лет</span>.
-          </li>
-        </ul>
+          </div>
+        </div>
       </div>
     </section>
     
@@ -96,26 +128,34 @@
           </li>
           <li class="process__item  process-item">
             <h3 class="process-item__title">Книга подготавливается к печати</h3>
-            <ul class="process-item__items">
-              <li class="process-item__item">Редактор вычитывает и правит текст.</li>
-              <li class="process-item__item">Создается дизайн страниц и рисуются иллюстрации.</li>
-              <li class="process-item__item">Верстается макет книги.</li>
-              <li class="process-item__item">Изданию присваиваются УДК, ББК, ISBN.</li>
-              <li class="process-item__item">Корректор вычитывает сверстанный макет, ищет ошибки.</li>
-              <li class="process-item__item">Создается дизайн или рисуется обложка.</li>
-              <li class="process-item__item">Делается спуск полос (расположение страницы в верной последовательности).</li>
-            </ul>
+            <div class="process-item__wrap">
+              <ul class="process-item__items">
+                <li class="process-item__item">Редактор вычитывает и правит текст.</li>
+                <li class="process-item__item">Создается дизайн страниц и рисуются иллюстрации.</li>
+                <li class="process-item__item">Верстается макет книги.</li>
+                <li class="process-item__item">Изданию присваиваются УДК, ББК, ISBN.</li>
+              </ul>
+              <ul class="process-item__items">
+                <li class="process-item__item">Корректор вычитывает сверстанный макет, ищет ошибки.</li>
+                <li class="process-item__item">Создается дизайн или рисуется обложка.</li>
+                <li class="process-item__item">Делается спуск полос (расположение страницы в верной последовательности).</li>
+              </ul>
+            </div>
           </li>
 
           <li class="process__item  process-item">
             <h3 class="process-item__title">Изготовление печатной и электронной книги</h3>
             <h4 class="process-item__subtitle">Для печатного издания</h4>
-            <ul class="process-item__items">
-              <li class="process-item__item">Печатаются страницы книги и обложка.</li>
-              <li class="process-item__item">Изготавливается обложка, переплетная крышка.</li>
-              <li class="process-item__item">Отпечатанные листы собираются в блоки и сшиваются в книгу.</li>
-              <li class="process-item__item">Сшитый книжный блок вставляется в обложку.</li>
-            </ul>
+            <div class="process-item__wrap">
+              <ul class="process-item__items">
+                <li class="process-item__item">Печатаются страницы книги и обложка.</li>
+                <li class="process-item__item">Изготавливается обложка, переплетная крышка.</li>
+              </ul>
+              <ul class="process-item__items">
+                <li class="process-item__item">Отпечатанные листы собираются в блоки и сшиваются в книгу.</li>
+                <li class="process-item__item">Сшитый книжный блок вставляется в обложку.</li>
+              </ul>
+            </div>
             <h4 class="process-item__subtitle">Для электронного издания</h4>
             <ul class="process-item__items">
               <li class="process-item__item">Создаем электронную версию книги в форматах ePub, fb2, mobi.</li>
@@ -145,121 +185,189 @@
     <!--price-->
     <section class="price">
       <div class="price__wrapper">
-        <h2 class="price__title">Сколько стоит напечатать рукопись?</h2>
-        <p class="price__subtitle">Воспользуйтесь онлайн-калькулятором, чтобы узнать ориентировочную стоимость печати.</p>
-        <p class="price__descr">Сотрудники Издательского дома Академии им. Н. Е. Жуковскго понимают всю ответственность работы при печати и издании книг.</p>
-        <p class="price__descr"> Мы ценим каждого автора и стараемся завязать сотрудничество на постоянной основе, которое длится годами.</p>
-        <p class="price__descr">Типография и издательство ИДАЖ готово взять на себя ответственность и выпустить в свет вашу книгу, мы учтём все ваши пожелания и внесем полученные правки в срок.</p>
-        <p class="price__descr">Будем рады видеть вас среди наших авторов.</p>
-      </div>
-      <div class="price__calc">
-        <div class="calc">
-          <div class="calc__wrapper">
-            <h3 class="calc__title">Выберите какой будет ваша книга</h3>
-            <div class="question__wrap">
-              <div class="question__item">
-                <div class="question__input  question__input--1">
-                  <input type="radio" name="item1" id="item1" value="Мягкая обложка" checked>
-                  <label for="item1">
-                    <span class="question__input--name">
-                      <span>Мягкая обложка</span>
-                    </span>
-                  </label>
-                </div>
-              </div>
-             <div class="question__item">
-                <div class="question__input  question__input--2">
-                  <input type="radio" name="item1" id="item2" value="Твердая обложка">
-                  <label for="item2">
-                    <span class="question__input--name">
-                      <span>Твердая обложка</span>
-                    </span>
+        <div class="price__col">
+          <h2 class="price__title">Сколько стоит напечатать рукопись?</h2>
+          <p class="price__subtitle">Воспользуйтесь онлайн-калькулятором, чтобы узнать ориентировочную стоимость печати.</p>
+          <p class="price__descr">Сотрудники Издательского дома Академии им. Н. Е. Жуковскго понимают всю ответственность работы при печати и издании книг.</p>
+          <p class="price__descr"> Мы ценим каждого автора и стараемся завязать сотрудничество на постоянной основе, которое длится годами.</p>
+          <p class="price__descr">Типография и издательство ИДАЖ готово взять на себя ответственность и выпустить в свет вашу книгу, мы учтём все ваши пожелания и внесем полученные правки в срок.</p>
+          <p class="price__descr">Будем рады видеть вас среди наших авторов.</p>
+        </div>
+        <div class="price__calc">
+          <div class="calc">
+            <div class="calc__wrapper">
+              <h3 class="calc__title">Выберите какой будет ваша книга</h3>
+              <div class="question__wrap">
+                <div class="question__item">
+                  <div class="question__input  question__input--1">
+                    <input type="radio" name="item1" id="item1" value="1000" checked>
+                    <label for="item1">
+                      <span class="question__input--name">
+                        <span>Мягкая обложка</span>
+                      </span>
                     </label>
+                  </div>
+                </div>
+               <div class="question__item">
+                  <div class="question__input  question__input--2">
+                    <input type="radio" name="item1" id="item2" value="2000">
+                    <label for="item2">
+                      <span class="question__input--name">
+                        <span>Твердая обложка</span>
+                      </span>
+                      </label>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="question__wrap2">
+              <div class="question__wrap2">
+                <div class="question__wrap2--col">
+                <div class="question__count">
+                  <div class="question__count--input">
+                    <h4>Кол-во страниц:</h4>
+                    <label for="num_page">
+                      <input type="text" name="item2" id="num_page" placeholder="100">
+                      <span>стр.</span>
+                    </label>
+                  </div>
+                </div>
 
-              <div class="question__count">
-                <div class="question__count--input">
-                  <h4>Кол-во страниц:</h4>
-                  <label for="item3">
-                    <input type="text" name="item2" id="item3" placeholder="100">
-                    <span>стр.</span>
+                <div class="question__count">
+                  <div class="question__count--input">
+                    <h4>Тираж:</h4>
+                    <label for="num_pub">
+                      <input type="text" name="item2" id="num_pub" placeholder="30">
+                      <span>экз.</span>
+                    </label>
+                  </div>
+                </div>
+                </div>
+                
+                <div class="question__wrap2--col">
+                <div class="question__count">
+                  <div class="1111">
+                    
+                    <h4>Формат книги:</h4>
+                   <select class="select" id="format">
+                    
+                    <option value="1">А5(145х205)</option>
+                    <option value="1">А5(145х205)</option>
+                    <option value="3">А4(205х290)</option>
+                    <option value="3">А6(100х140)</option>
+                    <option value="2">B5(170х240)</option>
+                    <option value="3">210x210</option>
+                   </select>
+              
+                  </div>
+                </div>
+
+                <div class="question__count">
+                  <div class="1111">
+                    
+                      <h4>Цветность блока:</h4>
+                   <select class="select" id="color">
+                    <option value="1" class="question__option">Черно-белый</option>
+                    <option value="1" class="question__option">Черно-белый</option>
+                    <option value="2" class="question__option">Цветной</option>
+                   </select>
+                 
+                  </div>
+                </div>
+                </div>
+
+                <div class="question__count  question__dop">
+                  <h4>Дополнительно:</h4>
+                  <label>
+                    <input type='checkbox' id="layout" value="100">
+                    <span class="checkbox"></span>
+                      <span class="form__checkbox--label">Верстка</span>
+                  </label>
+                  <label>
+                    <input type='checkbox' onchange="calc()" id="editing" value="200">
+                    <span class="checkbox"></span>
+                      <span class="form__checkbox--label">Редактура</span>
+                  </label>
+                  <label>
+                    <input type='checkbox' onchange="calc()" id="correction" value="300">
+                    <span class="checkbox"></span>
+                      <span class="form__checkbox--label">Корректура</span>
                   </label>
                 </div>
-              </div>
 
-              <div class="question__count">
-                <div class="question__count--input">
-                  <h4>Тираж:</h4>
-                  <label for="item4">
-                    <input type="text" name="item2" id="item4" placeholder="30">
-                    <span>экз.</span>
-                  </label>
-                </div>
               </div>
               
-              <div class="question__count">
-                <div class="1111">
-                  
-                  <h4>Формат книги:</h4>
-                 <select class="select">
-                  
-                  <option value="" class="question__option">А5(145х205)</option>
-                  <option value="А5(145х205)" class="question__option">А5(145х205)</option>
-                  <option value="А4(205х290)" class="question__option">А4(205х290)</option>
-                  <option value="А6(100х140)" class="question__option">А6(100х140)</option>
-                  <option value="А6(100х140)" class="question__option">B5(170х240)</option>
-                  <option value="210x210" class="question__option">210x210</option>
-                 </select>
-            
-                </div>
+              <div class="question__result">
+                <p>Ориентировочная стоимость</p>
+                <div id="result" class="calc__result"></div>
               </div>
 
-              <div class="question__count">
-                <div class="1111">
-                  
-                    <h4>Цветность блока:</h4>
-                 <select class="select">
-                  <option value="" class="question__option">Черно-белый</option>
-                  <option value="Черно-белый" class="question__option">Черно-белый</option>
-                  <option value="Цветной" class="question__option">Цветной</option>
-                 </select>
-               
-                </div>
-              </div>
-
-              <div class="question__count  question__dop">
-                <h4>Дополнительно:</h4>
-                <label>
-                  <input type='checkbox'>
-                  <span class="checkbox"></span>
-                    <span class="form__checkbox--label">Верстка</span>
-                </label>
-                <label>
-                  <input type='checkbox'>
-                  <span class="checkbox"></span>
-                    <span class="form__checkbox--label">Редактура</span>
-                </label>
-                <label>
-                  <input type='checkbox'>
-                  <span class="checkbox"></span>
-                    <span class="form__checkbox--label">Корректура</span>
-                </label>
-              </div>
+              <a href="#calculation" class="btn calc__btn btn--calc  popup-with-zoom-anim">Получить консультацию<br>и узнать точную стоимость</a>
 
             </div>
-            
-            <div class="question__result">
-              <p class="">Ориентировочная стоимость</p>
-              <div id="calc__result" class="calc__result">20 000₽</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--books-->
+    <section class="books">
+      <div class="reviews__wrapper">
+        <h2 class="books__title">Изданные книги</h2>
+        <div class="books__slider slider center">
+          <div class="books__item">
+            <div class="books__item--wrapper">
+              <div class="books__img">
+                <img src="img/slide-img2.jpg" alt="">
+              </div>
+              <div class="books__text">
+                <span class="books__item--title">Леонид Агутин. Безграничная музыка</span>
+                <p>«В ту ночь мы продали 24 тысячи альбомов! Это колоссальный успех и просто неимоверная цифра по тем временам.</p>
+                <p>Успешно встретили альбом и во Франции, Италии. А в Австрии, Польше и Венгрии наши песни крутят до сих пор.</p>
+                <p>Мы тогда продержались в верхних строчках европейских чартов целых девять недель! И это учитывая то, что наша пластинка была абсолютно не попсовой.»</p>
+              </div>
+              <a href="#" class="btn books__btn btn--books">В магазин</a>
             </div>
-
-            <button class="btn calc__btn btn--calc">
-              Получить консультацию и узнать точную стоимость
-            </button>
-
+          </div>
+          <div class="books__item">
+            <div class="books__item--wrapper">
+              <div class="books__img">
+                <img src="img/slide-img2.jpg" alt="">
+              </div>
+              <div class="books__text">
+                <span class="books__item--title">Леонид Агутин. Безграничная музыка</span>
+                <p>«В ту ночь мы продали 24 тысячи альбомов! Это колоссальный успех и просто неимоверная цифра по тем временам.</p>
+                <p>Успешно встретили альбом и во Франции, Италии. А в Австрии, Польше и Венгрии наши песни крутят до сих пор.</p>
+                <p>Мы тогда продержались в верхних строчках европейских чартов целых девять недель! И это учитывая то, что наша пластинка была абсолютно не попсовой.»</p>
+              </div>
+              <a href="#" class="btn books__btn btn--books">В магазин</a>
+            </div>
+          </div>
+          <div class="books__item">
+            <div class="books__item--wrapper">
+              <div class="books__img">
+                <img src="img/slide-img2.jpg" alt="">
+              </div>
+              <div class="books__text">
+                <span class="books__item--title">Леонид Агутин. Безграничная музыка</span>
+                <p>«В ту ночь мы продали 24 тысячи альбомов! Это колоссальный успех и просто неимоверная цифра по тем временам.</p>
+                <p>Успешно встретили альбом и во Франции, Италии. А в Австрии, Польше и Венгрии наши песни крутят до сих пор.</p>
+                <p>Мы тогда продержались в верхних строчках европейских чартов целых девять недель! И это учитывая то, что наша пластинка была абсолютно не попсовой.»</p>
+              </div>
+              <a href="#" class="btn books__btn btn--books">В магазин</a>
+            </div>
+          </div>
+          <div class="books__item">
+            <div class="books__item--wrapper">
+              <div class="books__img">
+                <img src="img/slide-img2.jpg" alt="">
+              </div>
+              <div class="books__text">
+                <span class="books__item--title">Леонид Агутин. Безграничная музыка</span>
+                <p>«В ту ночь мы продали 24 тысячи альбомов! Это колоссальный успех и просто неимоверная цифра по тем временам.</p>
+                <p>Успешно встретили альбом и во Франции, Италии. А в Австрии, Польше и Венгрии наши песни крутят до сих пор.</p>
+                <p>Мы тогда продержались в верхних строчках европейских чартов целых девять недель! И это учитывая то, что наша пластинка была абсолютно не попсовой.»</p>
+              </div>
+              <a href="#" class="btn books__btn btn--books">В магазин</a>
+            </div>
           </div>
         </div>
       </div>
@@ -317,7 +425,28 @@
   <!--reviews-->
     <section class="reviews">
       <div class="reviews__wrapper">
-        <h2 class="reviews__title">Честные отзывы о работе с нами</h2>
+        <h2 class="reviews__title">Честные отзывы авторов о работе с нами</h2>
+        <div class="reviews__slider slider single-item">
+          <div class="reviews__item">
+            <div class="reviews__item--wrapper">
+              <div class="reviews__item--text">
+              <h3 class="reviews__item--title">Ирина Умнова-Конюхова</h3>
+              <p>Работать с ИД Академии Жуковского начала ещё в 2014 году, за это время издала у них несколько своих произведений.</p>
+              <p>Каждый мой проект является уникальным и требует подхода как ко мне так и к рукописи, издательсво при работе со мной проявило себя с лучшей стороны, сказать что они сделали все как я хотела ни сказать ни чего.</p>
+              <p>Адекватно воспринимали и оценивали критику, давали дельные советы, книги получились с «душой», качество работы и полученной продукции на высоте. У издательства есть свой интернет-магазин куда выкладываются произведения авторов, тем самым о моих книгах узнает большой круг читателей и заказать мои произведения можно со всего мира.</p>
+              <p>Рада знакомству с этой компанией и впредь надеюсь на постоянное сотрудничество.</p>
+              </div>
+              <div class="reviews__item--img">
+                <img src="img/slide-img.jpg" alt="">
+              </div>
+            </div>
+          </div>
+          <div>2</div>
+          <div>3</div>
+          <div>4</div>
+          <div>5</div>
+          <div>6</div>
+        </div>
       </div>
     </section>
 
@@ -357,20 +486,26 @@
   <!--about-->
   <section class="about">
       <div class="about__wrapper">
-        <h2 class="about__title">Уважаемые авторы</h2>
-        <p class="about__text">Деятельность нашего издательсва началась с момента образования Академии им. Н. Е. Жуковского. Мы менялись и росли вместе с Академией.</p>
-        <p class="about__text">Академия была перенесена в Воронеж, но мы решили остаться и оставить её часть в Москве.</p>
-        <p class="about__text">Мы продолжаем издавать книги разных жанров, от научной литературы до стихов. Собственная производственная база даёт возможноть печать книги от 1 экземпляра и до тысячных тиражей. Наш коллектив впитал все традиции которые хранились в Академии.</p>
-        <p class="about__text">Мы продолжаем развиваться и учиться новому, приглашаем к сотрудничесву авторов, ведь бумажные книги несут в себе больше чем любая электронная книга.</p>
-        <figure class="about__item">
+        <div class="about__col">
+          <h2 class="about__title">Уважаемые авторы</h2>
+          <p class="about__text">Деятельность нашего издательсва началась с момента образования Академии им. Н. Е. Жуковского. Мы менялись и росли вместе с Академией.</p>
+          <p class="about__text">Академия была перенесена в Воронеж, но мы решили остаться и оставить её часть в Москве.</p>
+          <p class="about__text">Мы продолжаем издавать книги разных жанров, от научной литературы до стихов. Собственная производственная база даёт возможноть печать книги от 1 экземпляра и до тысячных тиражей. Наш коллектив впитал все традиции которые хранились в Академии.</p>
+          <p class="about__text">Мы продолжаем развиваться и учиться новому, приглашаем к сотрудничесву авторов, ведь бумажные книги несут в себе больше чем любая электронная книга.</p>
+          <div class="about__info  about__info--desc">
+            <p class="about__name">Агибалов Игорь Викторович</p>
+            <p class="about__position">Генеральный директор Издательского дома<br>Академии имени Н.Е. Жуковсокго</p>
+          </div>
+        </div>
+        <div class="about__item">
           <div class="about__photo">
             <img src="img/photo.png" alt="">
           </div>
-          <figcaption class="about__info">
+          <div class="about__info  about__info--mob">
             <p class="about__name">Агибалов Игорь Викторович</p>
-            <p class="about__position">Генеральный директор Издательского дома Академии имени Н.Е. Жуковсокго</p>
-          </figcaption>
-        </figure>
+            <p class="about__position">Генеральный директор Издательского дома<br>Академии имени Н.Е. Жуковсокго</p>
+          </div>
+        </div>
       </div>
   </section>
 
@@ -420,26 +555,34 @@
       </div>
   </section>
 
+  <div class="map-form__wrap">
+  <!--map-->
+  <div class="map">
+    <div class="map__wrapper">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1121.4052607679644!2d37.55126165824012!3d55.79652799514129!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNTXCsDQ3JzQ3LjUiTiAzN8KwMzMnMDguNSJF!5e0!3m2!1sru!2sby!4v1594654994877!5m2!1sru!2sby" width="1000" height="480" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+    </div>
+  </div>
+
   <!--ask-form-->
   <section class="ask-form">
     <div class="ask-form__wrapper">
     <form action="#" class="form2" method="POST">
       <div class="form2__wrapper">
         <h3 class="form2__title">Если у вас есть вопрос, вы можете задать его здесь</h3>
-        <div class="form__wrap">
+        <div class="ask-form__wrap">
           <div class="form__input--texarea">
             <label for="textarea"></label>
             <textarea rows="7" placeholder="Ваш вопрос" id="textarea"></textarea>
           </div>
 
           <div class="form__input  form__input--name">
-            <label for="name"></label>
-            <input type="text" name="name" id="name" placeholder="Ваше имя">
+            <label for="name2"></label>
+            <input type="text" name="name" id="name2" placeholder="Ваше имя">
           </div>
 
           <div class="form__input  form__input--tel">
-            <label for="tel"></label>
-              <input type="tel" id="tel" name="tel" placeholder="Ваш номер телефона">
+            <label for="tel2"></label>
+              <input type="tel" id="tel2" name="tel" placeholder="Ваш номер телефона">
           </div>
 
           </div>
@@ -451,18 +594,148 @@
     </form>  
     </div>
   </section>
+  </div>
 
   <!--footer-->
   <footer class="footer">
     <div class="footer__wrapper">
-      
+      <div class="footer1">
+        <div class="details  details--desc">
+          <span>ООО «ИД Академии Жуковского»</span><br>
+          <span>ОГРН: 1137746186181</span><br>
+          <span>ИНН: 771401001</span>
+        </div>
+        <a href="/" class="logo  logo--footer">
+          <img src="img/logo.png" alt="">
+        </a>
+        <div class="logo__text">
+          <span>Издательство и типография в Москве.</span>
+          <span>Издаем, печатем и реализуем книги с 2000 г.</span>
+        </div>
+        <div class="footer__phone  footer__phone--footer">
+          <a href="tel:88002015543">8 (800) 201 55-43</a>
+          <a href="tel:84997555543">8 (499) 755-55-43</a>
+        </div>
+      </div>
+      <div class="footer2">
+        <div class="details details--mob">
+          <span>ООО «ИД Академии Жуковского»</span><br>
+          <span>ОГРН: 1137746186181</span><br>
+          <span>ИНН: 771401001</span>
+        </div>
+        <div class="footer--col">
+          <div class="footer__privacy  politics">
+            <a href="#politics" class="popup-with-zoom-anim">Политика конфиденциальности</a>
+          </div>
+          <div class="development">
+            <a href="#" class="development__text">Разработка: <span>Веб-бюро</span></a>
+          </div>
+           <div class="footer__copyright  footer__copyright--desc">
+          <span>2020 &copy; ИД Академии Жуковского</span>
+        </div>
+        </div>
+        
+        <div class="footer__copyright  footer__copyright--mob">
+          <span>2020 &copy; ИД Академии Жуковского</span>
+        </div>
+        
+      </div>
     </div>
   </footer>
 
+  <!--popap form-callback-->
+  <div class="form-callback-wrap  zoom-anim-dialog mfp-hide">
+    <form action="#" class="form-callback" method="POST" id="callback">
+      <div class="form__wrapper">
+        <p class="form-callback__title">Заказ обратного звонка</p>
+        <p class="form__subtitle">
+         Заполните форму и мы свяжемся с Вами в ближайшее время
+        </p>
+        <div class="main__form--wrap">
+          <div class="form__input  form__input--name">
+            <label for="name5"></label>
+            <input type="text" name="name" id="name5" placeholder="Ваше имя">
+          </div>
+
+          <div class="form__input  form__input--tel">
+            <label for="tel5"></label>
+              <input type="tel" id="tel5" name="tel" placeholder="Ваш номер телефона">
+          </div>
+
+          </div>
+          <div class="form-callback__btn">
+            <input type="submit" class="btn  btn--form" value="Отправить">
+          </div>
+          <p class="form__subtitle2">Нажимая на кнопку, Вы даете согласие на обработку персональных данных и соглашаетесь с политикой конфедициальности</p>
+      </div>
+    </form>
+  </div>
+
+  <!--popap form-calculation-->
+  <div class="form-callback-wrap  zoom-anim-dialog mfp-hide">
+    <form action="#" class="form-callback" method="POST" id="calculation">
+      <div class="form__wrapper">
+        <p class="form-callback__title">Получите расчет издания книги в 3 ценовых вариантах и:</p>
+        <ul class="form-callback__items">
+          <li class="form-callback__item">Узнайте что входит в допечатную подготовку;</li>
+          <li class="form-callback__item">Зачем нужен издательский пакет;</li>
+          <li class="form-callback__item">Какие есть способы изготовления книги.</li>
+        </ul>
+        <div class="main__form--wrap">
+          <div class="form__input  form__input--name">
+            <label for="name4"></label>
+            <input type="text" name="name" id="name4" placeholder="Ваше имя">
+          </div>
+
+          <div class="form__input  form__input--tel">
+            <label for="tel4"></label>
+              <input type="tel" id="tel4" name="tel" placeholder="Ваш номер телефона">
+          </div>
+
+          </div>
+          <div class="form-callback__btn">
+            <input type="submit" class="btn  btn--form" value="Получить расчет сейчас">
+          </div>
+          <p class="form__subtitle2">Нажимая на кнопку, Вы даете согласие на обработку персональных данных и соглашаетесь с политикой конфедициальности</p>
+      </div>
+    </form>
+  </div>
+
+  <!--play-->
+  <div id="play" class="play zoom-anim-dialog mfp-hide"> 
+    <video controls>
+     <source src="img/Video.mp4" type='video/mp4'>
+    </video>
+  </div>
+
+
+  <!--politics-->
+  <div id="succesform" class="popup popup--success zoom-anim-dialog mfp-hide">
+        <p class="title">Отправлено!</p>
+        <p class="sub_title">Ожидайте нашего звонка!</p>
+    </div>
+    
+    <div id="politics" class="popup popup--politic zoom-anim-dialog mfp-hide">
+        <p class="title">Политика конфиденциальности</p>
+        <p class="sub_title">
+            1. Общие положения <br>
+            Настоящая политика обработки персональных данных составлена в соответствии с требованиями Федерального закона от 27.07.2006. №152-ФЗ «О персональных данных» и определяет порядок обработки персональных данных и меры по обеспечению безопасности персональных данных посетителей сайта (далее – Оператор).<br>
+            Оператор ставит своей важнейшей целью и условием осуществления своей деятельности соблюдение прав и свобод человека и гражданина при обработке его персональных данных, в том числе защиты прав на неприкосновенность частной жизни, личную и семейную тайну.<br>
+            Настоящая политика Оператора в отношении обработки персональных данных (далее – Политика) применяется ко всей информации, которую Оператор может получить о посетителях веб-сайта <br>
+            2. Основные понятия, используемые в Политике<br>
+            Автоматизированная обработка персональных данных – обработка персональных данных с помощью средств вычислительной техники;<br>
+            Блокирование персональных данных – временное прекращение обработки персональных данных (за исключением случаев, если обработка необходима для уточнения персональных данных);<br>
+            Веб-сайт – совокупность графических и информационных материалов, а также программ для ЭВМ и баз данных, обеспечивающих их доступность в сети интернет по сетевому адресу ;<br>
+        </p>
+    </div>
 
 
   <script src="js/preloader.js"></script>
   <script src="js/accordion.js"></script>
   <script src="js/select.js"></script>
+  <script src="js/calc.js"></script>
+  <script src="js/slider.js"></script>
+  <script src="js/popap.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
   </body>
 </html>
