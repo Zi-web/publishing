@@ -2239,8 +2239,9 @@ img.mfp-img {
 }
 .question__content {
   font-size: 14px;
-  font-family: Arial;
+  font-family: ProximaNova-Regular;
   color: red;
+  text-align: center;
 }
 .question__wrap2 {
   display: -webkit-box;
@@ -4488,7 +4489,7 @@ button.accordion.is-open:after {
   }
   .faq__desc {
     font-size: 18px;
-    max-width: 740px;
+    max-width: 620px;
     width: 100%;
     margin-bottom: 40px;
   }
@@ -4830,6 +4831,9 @@ button.accordion.is-open:after {
     -webkit-box-align: stretch;
         -ms-flex-align: stretch;
             align-items: stretch;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
   .map {
     width: 60%;

@@ -19,12 +19,6 @@ function calc() {
             var content = document.getElementById("question__content");
             var wrap = document.getElementById("calc__wrapper");
 
-
-            wrap.click = function(){
-              console.log(color)
-            };
-      
-          
             var count_page = 0;
             var price = 0;
             var cena;
