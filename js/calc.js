@@ -17,26 +17,6 @@ function calc() {
             var is_editing = document.getElementById("editing");
             var is_correction = document.getElementById("correction");
             var content = document.getElementById("question__content");
-            //var color1 = document.getElementById("color1");
-            /*var color1 = document.querySelector('.select-selected').textContent;
-            color_price = 0;
-            switch (color1) {
-                 case "Черно-белый":
-                    color_price = 3000;
-                    break
-                 case "Цветной":
-                    color_price = 12000;
-                    break   
-                    
-              }
-
-
-            document.getElementById("color1").oninput = function() {myFunction()};
-              function myFunction() {
-
-                console.log(color_price);
-            }
-*/
             var wrap = document.getElementById("calc__wrapper");
 
 
@@ -188,21 +168,13 @@ function calc() {
 
           
           price += Number(type_cover);//+обложка
-           price += Number(color);//+цветность
-          //price += Number(color.options[color.selectedIndex].value);
-          //price += (Number(color.options[color.selectedIndex].value));//*чб или цветной
-          //price += ((color.checked == true) ? parseInt(color.value) : 0);// цвет
+          price += Number(color);//+цветность
           price += ((is_layout.checked == true) ? parseInt(is_layout.value) : 0);//+верстка
           price += ((is_editing.checked == true) ? parseInt(is_editing.value) : 0);//+редактура
           price += ((is_correction.checked == true) ? parseInt(is_correction.value) : 0);//+коррект
           price += num_page * count_page;
           price += new_cena * num_pub;
 
-          
-            //price += (Number(color.options[color.selectedIndex].value));
-  
-           //console.log((Number(type_cover)) + (Number(color.options[color.selectedIndex].value)));
-           
 
         result.innerHTML = price + '₽';
  
