@@ -334,7 +334,7 @@ template {
 .style-h1 {
   font-family: ProximaNova-Bold;
   font-style: normal;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 33px;
   line-height: 90%;
   color: #14394C;
@@ -1207,8 +1207,8 @@ img.mfp-img {
   max-width: 1400px;
   margin: 0 auto;
   width: 100%;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 12px;
+  padding-right: 12px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   display: -webkit-box;
@@ -1370,8 +1370,8 @@ img.mfp-img {
   max-width: 1400px;
   margin: 0 auto;
   width: 100%;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 12px;
+  padding-right: 12px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   display: -webkit-box;
@@ -1391,7 +1391,7 @@ img.mfp-img {
 .main__title {
   font-family: ProximaNova-Bold;
   font-style: normal;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 33px;
   line-height: 90%;
   color: #14394C;
@@ -1503,8 +1503,8 @@ img.mfp-img {
   max-width: 1400px;
   margin: 0 auto;
   width: 100%;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 12px;
+  padding-right: 12px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   display: -webkit-box;
@@ -1600,8 +1600,8 @@ img.mfp-img {
   max-width: 1400px;
   margin: 0 auto;
   width: 100%;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 12px;
+  padding-right: 12px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   display: -webkit-box;
@@ -1755,8 +1755,8 @@ img.mfp-img {
   max-width: 1400px;
   margin: 0 auto;
   width: 100%;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 12px;
+  padding-right: 12px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   display: -webkit-box;
@@ -1813,8 +1813,8 @@ img.mfp-img {
   max-width: 1400px;
   margin: 0 auto;
   width: 100%;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 12px;
+  padding-right: 12px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   display: -webkit-box;
@@ -1936,8 +1936,8 @@ img.mfp-img {
   max-width: 1400px;
   margin: 0 auto;
   width: 100%;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 12px;
+  padding-right: 12px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   display: -webkit-box;
@@ -2079,8 +2079,8 @@ img.mfp-img {
   max-width: 1400px;
   margin: 0 auto;
   width: 100%;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 12px;
+  padding-right: 12px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   display: -webkit-box;
@@ -2197,8 +2197,8 @@ img.mfp-img {
   max-width: 1400px;
   margin: 0 auto;
   width: 100%;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 12px;
+  padding-right: 12px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   display: -webkit-box;
@@ -2849,8 +2849,8 @@ button.accordion.is-open:after {
   max-width: 1400px;
   margin: 0 auto;
   width: 100%;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 12px;
+  padding-right: 12px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
@@ -3031,8 +3031,8 @@ button.accordion.is-open:after {
   max-width: 1400px;
   margin: 0 auto;
   width: 100%;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 12px;
+  padding-right: 12px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
@@ -3299,8 +3299,8 @@ button.accordion.is-open:after {
   max-width: 1400px;
   margin: 0 auto;
   width: 100%;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 12px;
+  padding-right: 12px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   display: -webkit-box;
@@ -3473,8 +3473,8 @@ button.accordion.is-open:after {
   max-width: 1400px;
   margin: 0 auto;
   width: 100%;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 12px;
+  padding-right: 12px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   display: -webkit-box;
@@ -3719,8 +3719,8 @@ button.accordion.is-open:after {
   max-width: 1400px;
   margin: 0 auto;
   width: 100%;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 12px;
+  padding-right: 12px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   display: -webkit-box;
@@ -4245,8 +4245,8 @@ button.accordion.is-open:after {
     max-width: 1400px;
     margin: 0 auto;
     width: 100%;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 12px;
+    padding-right: 12px;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     display: -webkit-box;
@@ -4905,7 +4905,7 @@ button.accordion.is-open:after {
     padding-top: 60px;
   }
   .main__title {
-    max-width: 950px;
+    /*max-width: 950px;*/
   }
   .main__form {
     display: block;
