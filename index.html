@@ -60,9 +60,9 @@
             <span>Узнайте об издательстве за 30 секунд</span>
           </div>
         </div>
-        <form action="#" class="main__form" method="POST">
-            <div class="form__wrapper">
-              <p class="form-callback__title">Получите расчет издания книги в 3 ценовых вариантах и:</p>
+        <form action="#" class="main__form calc-form" method="POST">
+            <div class="calc-form__wrapper">
+              <p class="calc-form__title">Получите расчет издания книги в 3 ценовых вариантах и:</p>
               <ul class="form-callback__items">
                 <li class="form-callback__item">Узнайте что входит в допечатную подготовку;</li>
                 <li class="form-callback__item">Зачем нужен издательский пакет;</li>
@@ -80,12 +80,13 @@
                 </div>
 
                 </div>
-                <div class="form-callback__btn">
+                <div class="calc-form__btn">
                   <input type="submit" class="btn  btn--form" value="Получить расчет сейчас">
                 </div>
-                <p class="form__subtitle2">Нажимая на кнопку, Вы даете согласие на обработку персональных данных и соглашаетесь с политикой конфедициальности</p>
+                <p class="calc-form__subtitle">Нажимая на кнопку, Вы даете согласие на обработку персональных данных и соглашаетесь с политикой конфедициальности</p>
             </div>
-          </form>
+        </form>
+
         <a href="#calculation" class="main__btn btn btn--popap  popup-with-zoom-anim">Получить расчет сейчас</a>
       </div>
     </section>
@@ -132,7 +133,7 @@
               <ul class="process-item__items">
                 <li class="process-item__item">Редактор вычитывает и правит текст.</li>
                 <li class="process-item__item">Создается дизайн страниц и рисуются иллюстрации.</li>
-                <li class="process-item__item">Верстается макет книги.</li>
+                <li class="process-item__item">Верстается<br>макет книги.</li>
                 <li class="process-item__item">Изданию присваиваются УДК, ББК, ISBN.</li>
               </ul>
               <ul class="process-item__items">
@@ -195,25 +196,25 @@
         </div>
         <div class="price__calc">
           <div class="calc">
-            <div class="calc__wrapper">
+            <div class="calc__wrapper" id="calc__wrapper">
               <h3 class="calc__title">Выберите какой будет ваша книга</h3>
               <div class="question__wrap">
                 <div class="question__item">
                   <div class="question__input  question__input--1">
-                    <input type="radio" name="item1" id="item1" value="1000" checked>
+                    <input type="radio" name="item1" id="item1" value="3200" checked>
                     <label for="item1">
                       <span class="question__input--name">
-                        <span>Мягкая обложка</span>
+                        <span>Мягкая<br>обложка</span>
                       </span>
                     </label>
                   </div>
                 </div>
                <div class="question__item">
                   <div class="question__input  question__input--2">
-                    <input type="radio" name="item1" id="item2" value="2000">
+                    <input type="radio" name="item1" id="item2" value="7400">
                     <label for="item2">
                       <span class="question__input--name">
-                        <span>Твердая обложка</span>
+                        <span>Твердая<br>обложка</span>
                       </span>
                       </label>
                   </div>
@@ -244,32 +245,38 @@
                 
                 <div class="question__wrap2--col">
                 <div class="question__count">
-                  <div class="1111">
+                  <div class="question__count--input">
                     
                     <h4>Формат книги:</h4>
                    <select class="select" id="format">
                     
-                    <option value="1">А5(145х205)</option>
-                    <option value="1">А5(145х205)</option>
-                    <option value="3">А4(205х290)</option>
-                    <option value="3">А6(100х140)</option>
-                    <option value="2">B5(170х240)</option>
-                    <option value="3">210x210</option>
+                    <option value="А5(145х205)">А5(145х205)</option>
+                    <option value="А4(205х290)">А4(205х290)</option>
+                    <option value="А6(100х140)">А6(100х140)</option>
+                    <option value="B5(170х240)">B5(170х240)</option>
+                    <option value="210x210">210x210</option>
                    </select>
               
                   </div>
                 </div>
 
                 <div class="question__count">
-                  <div class="1111">
+                  <div class="question__count--input">
                     
                       <h4>Цветность блока:</h4>
+                     
                    <select class="select" id="color">
-                    <option value="1" class="question__option">Черно-белый</option>
-                    <option value="1" class="question__option">Черно-белый</option>
-                    <option value="2" class="question__option">Цветной</option>
+                    <option value="3000" class="question__option">Черно-белый</option>
+                    <option value="12000" class="question__option">Цветной</option>
                    </select>
-                 
+                   
+                <!---    <div class="custom-select" style="width:200px;">
+                        <select id="color" id="slect-type-size-width" class="select">
+                          <option value="3000">Черно-белый</option>
+                          <option value="3000">Черно-белый</option>
+                          <option value="12000">Цветной</option>
+                        </select>
+                    </div>  --->
                   </div>
                 </div>
                 </div>
@@ -277,17 +284,17 @@
                 <div class="question__count  question__dop">
                   <h4>Дополнительно:</h4>
                   <label>
-                    <input type='checkbox' id="layout" value="100">
+                    <input type='checkbox' id="layout" value="4000">
                     <span class="checkbox"></span>
                       <span class="form__checkbox--label">Верстка</span>
                   </label>
                   <label>
-                    <input type='checkbox' onchange="calc()" id="editing" value="200">
+                    <input type='checkbox' onchange="calc()" id="editing" value="6000">
                     <span class="checkbox"></span>
                       <span class="form__checkbox--label">Редактура</span>
                   </label>
                   <label>
-                    <input type='checkbox' onchange="calc()" id="correction" value="300">
+                    <input type='checkbox' onchange="calc()" id="correction" value="6000">
                     <span class="checkbox"></span>
                       <span class="form__checkbox--label">Корректура</span>
                   </label>
@@ -296,6 +303,7 @@
               </div>
               
               <div class="question__result">
+                <span id="question__content" class="question__content"></span>
                 <p>Ориентировочная стоимость</p>
                 <div id="result" class="calc__result"></div>
               </div>
@@ -323,8 +331,8 @@
                 <p>«В ту ночь мы продали 24 тысячи альбомов! Это колоссальный успех и просто неимоверная цифра по тем временам.</p>
                 <p>Успешно встретили альбом и во Франции, Италии. А в Австрии, Польше и Венгрии наши песни крутят до сих пор.</p>
                 <p>Мы тогда продержались в верхних строчках европейских чартов целых девять недель! И это учитывая то, что наша пластинка была абсолютно не попсовой.»</p>
+                <a href="#" class="btn books__btn btn--books">В магазин</a>
               </div>
-              <a href="#" class="btn books__btn btn--books">В магазин</a>
             </div>
           </div>
           <div class="books__item">
@@ -337,8 +345,8 @@
                 <p>«В ту ночь мы продали 24 тысячи альбомов! Это колоссальный успех и просто неимоверная цифра по тем временам.</p>
                 <p>Успешно встретили альбом и во Франции, Италии. А в Австрии, Польше и Венгрии наши песни крутят до сих пор.</p>
                 <p>Мы тогда продержались в верхних строчках европейских чартов целых девять недель! И это учитывая то, что наша пластинка была абсолютно не попсовой.»</p>
+                <a href="#" class="btn books__btn btn--books">В магазин</a>
               </div>
-              <a href="#" class="btn books__btn btn--books">В магазин</a>
             </div>
           </div>
           <div class="books__item">
@@ -351,8 +359,8 @@
                 <p>«В ту ночь мы продали 24 тысячи альбомов! Это колоссальный успех и просто неимоверная цифра по тем временам.</p>
                 <p>Успешно встретили альбом и во Франции, Италии. А в Австрии, Польше и Венгрии наши песни крутят до сих пор.</p>
                 <p>Мы тогда продержались в верхних строчках европейских чартов целых девять недель! И это учитывая то, что наша пластинка была абсолютно не попсовой.»</p>
+                <a href="#" class="btn books__btn btn--books">В магазин</a>
               </div>
-              <a href="#" class="btn books__btn btn--books">В магазин</a>
             </div>
           </div>
           <div class="books__item">
@@ -365,8 +373,8 @@
                 <p>«В ту ночь мы продали 24 тысячи альбомов! Это колоссальный успех и просто неимоверная цифра по тем временам.</p>
                 <p>Успешно встретили альбом и во Франции, Италии. А в Австрии, Польше и Венгрии наши песни крутят до сих пор.</p>
                 <p>Мы тогда продержались в верхних строчках европейских чартов целых девять недель! И это учитывая то, что наша пластинка была абсолютно не попсовой.»</p>
+                <a href="#" class="btn books__btn btn--books">В магазин</a>
               </div>
-              <a href="#" class="btn books__btn btn--books">В магазин</a>
             </div>
           </div>
         </div>
@@ -510,6 +518,7 @@
   </section>
 
   <!--about-->
+  <!---
   <section class="questions">
       <div class="questions__wrapper">
         <h2 class="questions__title">Отвечаем на частые вопросы</h2>
@@ -554,12 +563,63 @@
             </div>
       </div>
   </section>
+  --->
+  <section class="faq">
+    <div class="faq__wrapper">
+      <h2 class="faq__title">Отвечаем на частые вопросы</h2>
+      <p class="faq__desc">Если вы не нашли ответ на свой вопрос, напишите нам в чат на сайте или любым удобным способом через контакты внизу сайта</p>
+      <div class="faq-item">
+        <div class="faq-item__head">
+          <div class="faq-item__title">Какие книги выпускает издательсво?</div>
+          <button class="faq-item__btn"><img src="img/cross.png" alt="Кнопка открыть/закрыть" class="faq-item__cross"></button>
+        </div>
+        <div class="faq-item__content">
+          <p class="faq-item__text">УДК - код, обозначающий тематику произведения. Используется для быстрого поиска тематического раздела литературы или науки, к которому относится издание.</p>
+          <p class="faq-item__text">ББК - код, содержащий информацию о книге, авторе, тираже, годе выпуска. Зная код ББК можно быстро найти нужное издание во всех национальных ресурсах.</p>
+          <p class="faq-item__text">ISBN - идентификатор международного стандарта. Без него автор не может вступить в литературные сообщества. Научный труд не имеет права преподаваться в вузах без ISBN.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-item__head">
+          <div class="faq-item__title">Что такое УДК, ББК, ISBN?</div>
+          <button class="faq-item__btn"><img src="img/cross.png" alt="Кнопка открыть/закрыть" class="faq-item__cross"></button>
+        </div>
+        <div class="faq-item__content">
+           <p class="faq-item__text">УДК - код, обозначающий тематику произведения. Используется для быстрого поиска тематического раздела литературы или науки, к которому относится издание.</p>
+          <p class="faq-item__text">ББК - код, содержащий информацию о книге, авторе, тираже, годе выпуска. Зная код ББК можно быстро найти нужное издание во всех национальных ресурсах.</p>
+          <p class="faq-item__text">ISBN - идентификатор международного стандарта. Без него автор не может вступить в литературные сообщества. Научный труд не имеет права преподаваться в вузах без ISBN.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-item__head">
+          <div class="faq-item__title">Зачем нужен макет книги? Ведь у меня есть файл Word, который я могу перевести в PDF.</div>
+          <button class="faq-item__btn"><img src="img/cross.png" alt="Кнопка открыть/закрыть" class="faq-item__cross"></button>
+        </div>
+        <div class="faq-item__content">
+          <p class="faq-item__text">УДК - код, обозначающий тематику произведения. Используется для быстрого поиска тематического раздела литературы или науки, к которому относится издание.</p>
+          <p class="faq-item__text">ББК - код, содержащий информацию о книге, авторе, тираже, годе выпуска. Зная код ББК можно быстро найти нужное издание во всех национальных ресурсах.</p>
+          <p class="faq-item__text">ISBN - идентификатор международного стандарта. Без него автор не может вступить в литературные сообщества. Научный труд не имеет права преподаваться в вузах без ISBN.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-item__head">
+          <div class="faq-item__title">У меня есть тираж, который я выпустил в другом издательстве. Можете его продать?</div>
+          <button class="faq-item__btn"><img src="img/cross.png" alt="Кнопка открыть/закрыть" class="faq-item__cross"></button>
+        </div>
+        <div class="faq-item__content">
+           <p class="faq-item__text">УДК - код, обозначающий тематику произведения. Используется для быстрого поиска тематического раздела литературы или науки, к которому относится издание.</p>
+          <p class="faq-item__text">ББК - код, содержащий информацию о книге, авторе, тираже, годе выпуска. Зная код ББК можно быстро найти нужное издание во всех национальных ресурсах.</p>
+          <p class="faq-item__text">ISBN - идентификатор международного стандарта. Без него автор не может вступить в литературные сообщества. Научный труд не имеет права преподаваться в вузах без ISBN.</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <div class="map-form__wrap">
   <!--map-->
   <div class="map">
     <div class="map__wrapper">
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1121.4052607679644!2d37.55126165824012!3d55.79652799514129!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNTXCsDQ3JzQ3LjUiTiAzN8KwMzMnMDguNSJF!5e0!3m2!1sru!2sby!4v1594654994877!5m2!1sru!2sby" width="1000" height="480" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1121.4052607679644!2d37.55126165824012!3d55.79652799514129!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNTXCsDQ3JzQ3LjUiTiAzN8KwMzMnMDguNSJF!5e0!3m2!1sru!2sby!4v1594654994877!5m2!1sru!2sby" width="1000" height="480" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
     </div>
   </div>
 
@@ -674,31 +734,31 @@
   <!--popap form-calculation-->
   <div class="form-callback-wrap  zoom-anim-dialog mfp-hide">
     <form action="#" class="form-callback" method="POST" id="calculation">
-      <div class="form__wrapper">
-        <p class="form-callback__title">Получите расчет издания книги в 3 ценовых вариантах и:</p>
-        <ul class="form-callback__items">
-          <li class="form-callback__item">Узнайте что входит в допечатную подготовку;</li>
-          <li class="form-callback__item">Зачем нужен издательский пакет;</li>
-          <li class="form-callback__item">Какие есть способы изготовления книги.</li>
-        </ul>
-        <div class="main__form--wrap">
-          <div class="form__input  form__input--name">
-            <label for="name4"></label>
-            <input type="text" name="name" id="name4" placeholder="Ваше имя">
-          </div>
+            <div class="calc-form__wrapper">
+              <p class="calc-form__title">Получите расчет издания книги в 3 ценовых вариантах и:</p>
+              <ul class="form-callback__items">
+                <li class="form-callback__item">Узнайте что входит в допечатную подготовку;</li>
+                <li class="form-callback__item">Зачем нужен издательский пакет;</li>
+                <li class="form-callback__item">Какие есть способы изготовления книги.</li>
+              </ul>
+              <div class="main__form--wrap">
+                <div class="form__input  form__input--name">
+                  <label for="name4"></label>
+                  <input type="text" name="name" id="name4" placeholder="Ваше имя">
+                </div>
 
-          <div class="form__input  form__input--tel">
-            <label for="tel4"></label>
-              <input type="tel" id="tel4" name="tel" placeholder="Ваш номер телефона">
-          </div>
+                <div class="form__input  form__input--tel">
+                  <label for="tel4"></label>
+                    <input type="tel" id="tel4" name="tel" placeholder="Ваш номер телефона">
+                </div>
 
-          </div>
-          <div class="form-callback__btn">
-            <input type="submit" class="btn  btn--form" value="Получить расчет сейчас">
-          </div>
-          <p class="form__subtitle2">Нажимая на кнопку, Вы даете согласие на обработку персональных данных и соглашаетесь с политикой конфедициальности</p>
-      </div>
-    </form>
+                </div>
+                <div class="calc-form__btn">
+                  <input type="submit" class="btn  btn--form" value="Получить расчет сейчас">
+                </div>
+                <p class="calc-form__subtitle">Нажимая на кнопку, Вы даете согласие на обработку персональных данных и соглашаетесь с политикой конфедициальности</p>
+            </div>
+        </form>
   </div>
 
   <!--play-->
@@ -736,6 +796,7 @@
   <script src="js/calc.js"></script>
   <script src="js/slider.js"></script>
   <script src="js/popap.js"></script>
+  <script src="js/faq.js"></script>
   <script src="js/jquery.magnific-popup.min.js"></script>
   </body>
 </html>
