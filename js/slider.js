@@ -9,10 +9,10 @@ $('.single-item').slick({
 
 $('.center').slick({
 centerMode: true,
- centerPadding: '200px',
+ centerPadding: '0px',
   slidesToShow: 1,
   dots: true,
-  arrows: false,
+  arrows: true,
   responsive: [
     {
       breakpoint: 1400,

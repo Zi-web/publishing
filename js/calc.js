@@ -24,6 +24,25 @@ function calc() {
             var cena;
             var new_cena;
 
+            if (num_page <= 49) {
+              content.innerHTML = "количество страниц должно быть не менее 50";
+          } else if (num_page >= 50 && num_page <= 99) {
+              count_page = 17;
+              content.innerHTML = "";
+              price2()
+          } else if (num_page >= 100 && num_page <= 199) {
+              count_page = 14;
+              content.innerHTML = "";
+              price3()
+          } else if (num_page >= 200 && num_page <= 299) {
+              count_page = 11;
+              content.innerHTML = "";
+              price4()
+          } else if (num_page >= 300) {
+              count_page = 9;
+              content.innerHTML = "";
+              price5()
+          } 
 
             function sale() {
                 if (num_pub >= 2 && num_pub <= 10) {
@@ -36,6 +55,8 @@ function calc() {
                     new_cena = cena - (cena / 100 * 40);
                 } else if (num_pub === "") {
                     content.innerHTML = "заполните тираж";
+                } else if (num_pub === "1") {
+                    content.innerHTML = "тираж должен быть больше единицы";
                 }
             }
 
@@ -140,26 +161,7 @@ function calc() {
             }
       
 
-          if (num_page <= 49) {
-              content.innerHTML = "количество страниц должно быть не менее 50";
-          } else if (num_page >= 50 && num_page <= 99) {
-              count_page = 17;
-              content.innerHTML = "";
-              price2()
-          } else if (num_page >= 100 && num_page <= 199) {
-              count_page = 14;
-              content.innerHTML = "";
-              price3()
-          } else if (num_page >= 200 && num_page <= 299) {
-              count_page = 11;
-              content.innerHTML = "";
-              price4()
-          } else if (num_page >= 300) {
-              count_page = 9;
-              content.innerHTML = "";
-              price5()
-          }
-
+          
           
           price += Number(type_cover);//+обложка
           price += Number(color);//+цветность
@@ -171,6 +173,4 @@ function calc() {
 
 
         result.innerHTML = price + '₽';
- 
-
-      }
+}
