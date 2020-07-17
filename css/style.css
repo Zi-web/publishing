@@ -2158,6 +2158,9 @@ img.mfp-img {
   margin: 0;
   padding-bottom: 20px;
 }
+.about__text br {
+  display: none;
+}
 .about__item {
   margin: 0;
   margin-bottom: 20px;
@@ -4444,11 +4447,14 @@ button.accordion.is-open:after {
     -webkit-box-pack: end;
         -ms-flex-pack: end;
             justify-content: flex-end;
-    padding-top: 50px;
+    padding-top: 60px;
   }
   .about__text {
-    max-width: 90%;
+    max-width: 100%;
     font-size: 18px;
+  }
+  .about__text br {
+    display: block;
   }
   .about__title {
     text-align: left;
@@ -4458,6 +4464,7 @@ button.accordion.is-open:after {
   .about__item {
     margin-left: auto;
     max-width: 560px;
+    padding-top: 30px;
   }
   .about__item:after {
     content: "";
@@ -4479,18 +4486,6 @@ button.accordion.is-open:after {
     font-size: 20px;
   }
   .about__photo {
-    width: 260px;
-    height: 330px;
-  }
-  .about__photo img {
-    bottom: 0px;
-    left: 50%;
-    -webkit-transform: translateX(-50%);
-            transform: translateX(-50%);
-    width: 100%;
-    width: 306px;
-  }
-  .about__photo {
     width: 450px;
     height: 620px;
   }
@@ -4501,9 +4496,6 @@ button.accordion.is-open:after {
             transform: translateX(-50%);
     width: 100%;
     width: 500px;
-  }
-  .about__item {
-    padding-top: 100px;
   }
   .questions__title {
     font-size: 48px;
