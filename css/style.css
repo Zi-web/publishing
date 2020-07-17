@@ -3232,17 +3232,6 @@ button.accordion.is-open:after {
   display: none;
 }
 .calc-form {
-  /*max-width: 320px;
-    width: 100%;
-    background: #FFFFFF;
-    box-shadow: 0px 0px 14px rgba(0, 0, 0, 0.15);
-    border-radius: 6px;
-    padding: 6px;
-    box-sizing: border-box;
-    position: relative;
-    margin: 0 auto;*/
-}
-.calc-form {
   padding-left: 30px;
   padding-right: 30px;
   -webkit-box-sizing: border-box;
@@ -3271,14 +3260,12 @@ button.accordion.is-open:after {
           align-items: flex-start;
   border: 1px solid #F3F3F3;
   border-radius: 6px;
-  padding-left: 5px;
-  padding-right: 5px;
+  padding: 20px 5px 20px 5px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
 .calc-form__wrapper-hid {
-  padding-left: 25px;
-  padding-right: 25px;
+  padding: 10px 25px 10px 25px;
 }
 .calc-form__title {
   text-align: center;
@@ -4905,6 +4892,7 @@ button.accordion.is-open:after {
   .reviews__item--img {
     width: 50%;
     margin: 0 0 auto auto;
+    padding-right: 15px;
   }
   .reviews__title {
     margin-bottom: -100px;
