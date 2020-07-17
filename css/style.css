@@ -3263,9 +3263,13 @@ button.accordion.is-open:after {
           align-items: flex-start;
   border: 1px solid #F3F3F3;
   border-radius: 6px;
-  padding: 20px 5px 20px 5px;
+  padding: 20px 0px 20px 0px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+}
+.calc-form__wrapper2 {
+  padding-left: 10px;
+  padding-right: 10px;
 }
 .calc-form__wrapper-hid {
   padding: 10px 25px 10px 25px;
@@ -3276,6 +3280,7 @@ button.accordion.is-open:after {
   font-style: normal;
   font-weight: normal;
   font-size: 20px;
+  width: 100%;
   line-height: 130%;
   color: #0E0C17;
 }
