@@ -4452,7 +4452,7 @@ button.accordion.is-open:after {
     -webkit-box-pack: end;
         -ms-flex-pack: end;
             justify-content: flex-end;
-    padding-top: 60px;
+    padding-top: 50px;
   }
   .about__text {
     max-width: 100%;
@@ -4750,7 +4750,7 @@ button.accordion.is-open:after {
             justify-content: space-between;
     overflow-x: hidden;
     overflow-y: auto;
-    padding-top: 50px;
+    padding-top: 80px;
   }
   .about__col {
     width: 55%;
